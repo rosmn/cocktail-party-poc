@@ -19,7 +19,7 @@ import {
 
 import configData from "./.env.local.json";
 
-const firebaseConfig = process.env.firebaseConfig || configData.firebaseConfig;
+const firebaseConfig = process.env.REACT_APP_FIREBASE_CONFIG || configData.firebaseConfig;
 console.log({ firebaseConfig });
 
 const app = initializeApp(firebaseConfig);
