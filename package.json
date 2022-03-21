@@ -5,7 +5,7 @@
   "engines": {
     "node": "14.18.0",
     "yarn": "1.22.15"
-  }
+  },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
