@@ -19,7 +19,9 @@ import {
 
 import configData from "./.env.local.json";
 
-const firebaseConfig = configData.firebaseConfig;
+const firebaseConfig = configData
+  ? configData.firebaseConfig
+  : process.env.firebaseConfig;
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
