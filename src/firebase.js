@@ -18,6 +18,7 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
+console.log(process.env);
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
