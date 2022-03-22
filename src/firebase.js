@@ -17,11 +17,7 @@ import {
   addDoc,
 } from "firebase/firestore";
 
-import configData from "./.env.local.json";
-
-const firebaseConfig = process.env.REACT_APP_FIREBASE_CONFIG || configData.firebaseConfig;
-console.log({ firebaseConfig });
-console.log({ processEnv: process.env });
+const firebaseConfig = JSON.parse(process.env.REACT_APP_FIREBASE_CONFIG);
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
