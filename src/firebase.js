@@ -21,6 +21,7 @@ import configData from "./.env.local.json";
 
 const firebaseConfig = process.env.REACT_APP_FIREBASE_CONFIG || configData.firebaseConfig;
 console.log({ firebaseConfig });
+console.log({ processEnv: process.env });
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
